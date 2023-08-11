@@ -25,7 +25,6 @@ AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 BOARD_VENDOR_SEPOLICY_DIRS += hardware/dolby/sepolicy/vendor
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += hardware/dolby/dolby_framework_matrix.xml
 DEVICE_MANIFEST_FILE += hardware/dolby/vendor.dolby.hardware.dms@2.0-service.xml
     
 # Configs
