@@ -1,12 +1,19 @@
 OnePlus Dolby
 ==============
 
+Note: This Dolby Atmos supports Dolby Digital Plus codecs. [AC3 | EAC3 | EAC3-JOC]
+
 Getting Started
 ---------------
-Make sure you are not using any audio effect configuration in your device trees. Also for dolby media codecs to work add this line in your media codecs config (should be in vendor partition) :-
+Clone the repository :-
 
 ```bash
-<Include href="media_codecs_dolby_audio.xml" />
+git clone https://github.com/userariii/hardware_dolby.git hardware/dolby
+```
+Patches required on the device tree side :-
+
+```bash
+https://github.com/PixelExperience-Devices/device_nokia_sdm660-common/commit/9084bb590310efb2db02d2e553fc2f13db46b2e9
 ```
 
 To build, inherit the dolby config by adding this in your device's makefile :-
@@ -14,4 +21,3 @@ To build, inherit the dolby config by adding this in your device's makefile :-
 ```bash
 $(call inherit-product, hardware/dolby/dolby.mk)
 ```
-
